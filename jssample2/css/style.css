@@ -1,0 +1,129 @@
+@media screen and (min-width: 900px)
+{
+
+body{
+    font-family:'Franklin Gothic Medium';
+    box-sizing: border-box;
+}
+
+.header_wrap{
+    background-color: #0b013c;
+    background-image: url(../img/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 5rem;
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+    height: 40rem;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    color: #111111;
+}
+
+h5{
+    border: white solid 3px;
+}
+
+input{
+    height: 2rem;
+    width: 20rem;
+}
+
+button{
+    background-color: #f8cb8a;
+    height: 2.5rem;
+    width: 8rem;
+}
+button:hover{
+    background-color: #f6bb66;
+}
+
+.section1, .section5{
+    padding: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    color: #808080;
+}
+
+.section2{
+    width: 70%;
+    margin: 0 auto;
+    color: #808080;
+    display: flex;
+    align-items: center;
+}
+.section2 img{
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin: 1rem;
+}
+
+hr{
+    width: 10%;
+    border: 5px solid #f6bb66;
+}
+
+.parent{
+    margin: 0 auto;
+    display: flex;
+    width: 70%;
+    text-align: center;
+}
+
+.section3 img, .section4 img{
+    width: 50%;
+    height: 50%;
+}
+
+.section3, .section4{
+    float: left;
+    color: #808080;
+    margin: auto 3rem;
+}
+
+.section5{
+    background-color: #0b013c;
+    color: white;
+    background-image: url(../img/space-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section5{
+    color: white;
+}
+
+footer{
+    background-image: url(../img/footer-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 3rem;
+    margin: 0 auto;
+    text-align: left;
+    width: 70%;
+}
+
+footer img{
+    float: right;
+}
+
+footer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a{
+    color: white;
+}
+
+}
