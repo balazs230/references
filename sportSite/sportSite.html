@@ -1,0 +1,430 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Examen</title>
+
+    <style>
+        .smallpics {
+            border: 3px solid rgb(250, 142, 70);
+            border-radius: 5px;
+        }
+
+        body {
+            background-color: rgb(217, 248, 238);
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">
+                SportsMag
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-user"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#excarousel">Carousel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galerie">Galerie foto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produse">Produse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#payment">Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#navbarmodal"><i
+                                style="font-size:24px" class="fa">&#xf090;</i>Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal" id="navbarmodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Sign in</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" id="verticalform">
+                                <div class="form-group">
+                                    <label for="">Email:</label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Password:</label>
+                                    <input type="password" class="form-control" name="pwd" id="pwd"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="remember">Remember
+                                        me</label>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                </div>
+                                <br>
+                                <div>
+                                    <button type="reset" class="btn btn-warning btn-block">Recover password</button>
+                                </div>
+                                <br>
+                                <div>
+                                    <button type="submit" class="btn btn-danger" data-dismiss="modal"
+                                        style="float: right">Inchide</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+    <div class="container">
+        <div id="excarousel" data-interval="5000" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#excarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#excarousel" data-slide-to="1"></li>
+                <li data-target="#excarousel" data-slide-to="2"></li>
+                <li data-target="#excarousel" data-slide-to="3"></li>
+            </ul>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="mingi.jpg" alt="mingi" width="100%" height="600px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="football.jpg" alt="fotbal" width="100%" height="600px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="swim.jpg" alt="swim" width="100%" height="600px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fencing.jpg" alt="scrima" width="100%" height="600px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#excarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#excarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="about" style="box-shadow: 10px 10px 10px 10px #888888; padding: 10px">
+                    <h2>About us</h2>
+                    <hr>
+                    <p>Sport includes all forms of competitive physical activity or games which,[1] through casual or
+                        organised participation, aim to use, maintain or improve physical ability and skills while
+                        providing enjoyment to participants, and in some cases, entertainment for spectators.[2]
+                        Hundreds of sports exist, from those between single contestants, through to those with hundreds
+                        of simultaneous participants, either in teams or competing as individuals. In certain sports
+                        such as racing, many contestants may compete, simultaneously or consecutively, with one winner;
+                        in others, the contest (a match) is between two sides, each attempting to exceed the other. Some
+                        sports allow a "tie" or "draw", in which there is no single winner; others provide tie-breaking
+                        methods to ensure one winner and one loser. A number of contests may be arranged in a tournament
+                        producing a champion. Many sports leagues make an annual champion by arranging games in a
+                        regular sports season, followed in some cases by playoffs.</p>
+                    <p>Sport is generally recognised as system of activities which are based in physical athleticism or
+                        physical dexterity, with the largest major competitions such as the Olympic Games admitting only
+                        sports meeting this definition,[3] and other organisations such as the Council of Europe using
+                        definitions precluding activities without a physical element from classification as sports.[2]
+                        However, a number of competitive, but non-physical, activities claim recognition as mind sports.
+                        The International Olympic Committee (through ARISF) recognises both chess and bridge as bona
+                        fide sports, and SportAccord, the international sports federation association, recognises five
+                        non-physical sports: bridge, chess, draughts (checkers), Go and xiangqi,[4][5] and limits the
+                        number of mind games which can be admitted as sports.[1]</p>
+                    <h4>Cele mai populare sporturi</h4>
+                    <label>Fotbal</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:90%"></div>
+                    </div>
+                    <label>Baschet</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" style="width:70%"></div>
+                    </div>
+                    <label>Tenis</label>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row" id="galerie">
+            <div class="col-lg-12" style="box-shadow: 10px 10px 10px 10px #888888; padding: 20px">
+                <h2>Galerie</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4"><img src="pic1.jpg" alt="pic1" class="smallpics" width="100%"
+                            data-toggle="modal" data-target="#pic1modal">
+                        <div class="modal fade" id="pic1modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">Galerie foto</div>
+                                    <div class="modal-body"><img src="pic1.jpg" alt="" width="100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"><img src="pic2.jpg" alt="pic2" class="smallpics" width="100%"
+                            data-toggle="modal" data-target="#pic2modal">
+                        <div class="modal fade" id="pic2modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">Galerie foto</div>
+                                    <div class="modal-body"><img src="pic2.jpg" alt="" width="100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"><img src="pic3.jpg" alt="pic3" class="smallpics" width="100%"
+                            data-toggle="modal" data-target="#pic3modal">
+                        <div class="modal fade" id="pic3modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">Galerie foto</div>
+                                    <div class="modal-body"><img src="pic3.jpg" alt="" width="100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4"><img src="pic4.jpg" alt="pic4" class="smallpics" width="100%"
+                            data-toggle="modal" data-target="#pic4modal">
+                        <div class="modal fade" id="pic4modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">Galerie foto</div>
+                                    <div class="modal-body"><img src="pic4.jpg" alt="" width="100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"><img src="pic5.jpg" alt="pic5" class="smallpics" width="100%"
+                            data-toggle="modal" data-target="#pic5modal">
+                        <div class="modal fade" id="pic5modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">Galerie foto</div>
+                                    <div class="modal-body"><img src="pic5.jpg" alt="" width="100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"><img src="pic6.jpg" class="smallpics" alt="pic6" width="100%"
+                            data-toggle="modal" data-target="#pic6modal">
+                        <div class="modal fade" id="pic6modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">Galerie foto</div>
+                                    <div class="modal-body"><img src="pic6.jpg" alt="" width="100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="box-shadow: 10px 10px 10px 10px #888888; padding: 20px" id="produse">
+            <div class="col-lg-12">
+                <h2>Produse</h2>
+                <hr>
+                <table class="table table-bordered table-hover" style="text-align: center">
+                    <thead class="table table-active">
+                        <tr>
+                            <th rowspan="2"></th>
+                            <th rowspan="2">Produse</th>
+                            <th colspan="2">Preturi</th>
+                            <th rowspan="2">Disponibil</th>
+                            <th rowspan="2"></th>
+                        </tr>
+                        <tr>
+                            <th>Amator</th>
+                            <th>Performanta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mingi</td>
+                            <td>100</td>
+                            <td>200</td>
+                            <td><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                            <td><button class="btn btn-warning">Comanda</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Arcuri</td>
+                            <td>200</td>
+                            <td>400</td>
+                            <td><i class="fa fa-times" aria-hidden="true" style="color: red"></td>
+                            <td><button class="btn btn-warning disabled">Comanda</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Arme de scrima</td>
+                            <td>150</td>
+                            <td>300</td>
+                            <td><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                            <td><button class="btn btn-warning">Comanda</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rachete</td>
+                            <td>50</td>
+                            <td>200</td>
+                            <td><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                            <td><button class="btn btn-warning">Comanda</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Echipamente de protectie</td>
+                            <td>100</td>
+                            <td>250</td>
+                            <td><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                            <td><button class="btn btn-warning btn-right">Comanda</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row" id="payment" style="box-shadow: 10px 10px 10px 10px #888888; padding: 20px">
+            <div class="col-lg-12">
+                <h2>Payment</h2>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <label>Nume</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" name="username" placeholder="Enter name"
+                                required="">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardNumber">Card number</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                            </div>
+                            <input type="text" class="form-control" name="cardNumber" placeholder="Enter card number">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label><span class="hidden-xs">Expiration</span> </label>
+                                <div class="form-inline">
+                                    <select class="form-control" style="width:45%">
+                                        <option>MM</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    <span style="width:10%; text-align: center"> / </span>
+                                    <select class="form-control" style="width:45%">
+                                        <option>YY</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label data-toggle="tooltip" title=""
+                                    data-original-title="3 digits code on back side of the card">CVV <i
+                                        class="fa fa-question-circle"></i></label>
+                                <input class="form-control" required="" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger" type="button"> Cancel </button>
+                    <button class="btn btn-success" type="button" style="float: right"> Pay </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row" style="background-color: chocolate; padding: 10px; border-top: 5px solid red">
+            <div class="col-lg-4">
+                <ul style="list-style-type: none">
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Report problem</li>
+                    <li>Partners</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul style="list-style-type: none">
+                    <li>Forum</li>
+                    <li>Terms</li>
+                    <li>Statistics</li>
+                    <li>Ads</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul style="list-style-type: none">
+                    <li>Facebook</li>
+                    <li>Email</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
